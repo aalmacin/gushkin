@@ -1,7 +1,40 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "test:watch": "lerna run test:watch --parallel",
+    "test:coverage": "lerna run test:coverage",
+    "lint": "lerna run lint",
+    "lint-staged": "lint-staged",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "clean": "lerna run clean && lerna clean -y",
+    "type-check": "lerna run type-check",
+    "changelog": "lerna version --conventional-commits --no-push --no-git-tag-version",
+    "version": "lerna version --conventional-commits",
+    "publish": "lerna publish",
+    "new-package": "node scripts/create-package.js",
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "dev": "lerna run dev --parallel"
+  },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@commitlint/cli": "^17.6.0",
+    "@commitlint/config-conventional": "^17.6.0",
+    "husky": "^8.0.3",
+    "lerna": "^3.22.1",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }

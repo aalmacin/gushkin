@@ -1,0 +1,35 @@
+{
+  "name": "@gushkin/example-lib",
+  "version": "1.0.0",
+  "description": "Example library demonstrating monorepo package structure",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "example",
+    "library",
+    "gushkin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@gushkin/eslint-config": "^1.0.0",
+    "@gushkin/typescript-config": "^1.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  }
+}

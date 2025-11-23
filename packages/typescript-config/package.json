@@ -1,0 +1,22 @@
+{
+  "name": "@gushkin/typescript-config",
+  "version": "1.0.0",
+  "description": "Shared TypeScript configuration for Gushkin monorepo",
+  "main": "index.js",
+  "files": [
+    "base.json",
+    "node.json",
+    "react.json"
+  ],
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "config",
+    "gushkin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^4.9.0 || ^5.0.0"
+  }
+}
