@@ -1,0 +1,36 @@
+{
+  "name": "@gushkin/test-utils",
+  "version": "1.0.0",
+  "description": "Shared testing utilities for Gushkin monorepo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "jest-preset.js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "test",
+    "testing",
+    "jest",
+    "utilities",
+    "gushkin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "jest": "^29.0.0"
+  },
+  "devDependencies": {
+    "@gushkin/typescript-config": "^1.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@jest/globals": "^29.5.0"
+  }
+}
